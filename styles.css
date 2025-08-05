@@ -1,15 +1,3 @@
-/*** You will not need this file until Unit 3 ***/
-
-/*** VSCodeEDU preview fix 
-
-
-  Purpose:
-  - Fix VSCodeEDU issue that causes a white border to show around
-    the preview window
-
-  When To Modify:
-  - If you change the background color of your webpage, you may need to update this rule too.
-***/
 body{
     margin: 0;
     padding: 0;
@@ -19,12 +7,9 @@ body{
     width: 100%;
     background-color: var(--bg-color); /* see bottom of file for color variables */
 
-    /* Customize the default size, color, and font for text*/
     font-size: 16px;
     color: var(--text-color);
-    font-family: Tahoma, sans-serif; /* This tells the browser: "Try to use `Tahoma`, and if you can't find it, use any sans-serif font." */
-
-    /* Put space around the edges of the webpage */
+    font-family: Tahoma, sans-serif; 
 
 }
 .important{
@@ -44,30 +29,6 @@ html {
     background-color: var(--bg-color);
 }
 
-/*** body ***
-  
-  Purpose:
-  - Add style rules for the body of your webpage
-  - This is useful if you want a rule to apply to EVERYTHING on your page
-    - (Tip: You can always override these rules later in the stylesheet)
-
-  When To Modify:
-  - [ ] Project 3 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
-
-
-
-/*** Text ***
-  
-  Purpose: 
-  - Add style rules for headings (h1-6),
-    paragraphs (p), links (a), and buttons
-
-  When To Modify:
-  - [X] Project 3 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
 
 h1 {
    text-align: center;
@@ -81,9 +42,6 @@ h3 {
     font-size: large;
 }
 
-h4 {
-    
-}
 
 ul{
     list-style: disc ;
@@ -106,7 +64,6 @@ a:active{
 }
 
 button {
-    /* Example Style, replace with your own! */
     background-color: green;    /* button color */
     color: white;               /* text color */
     border: none;               /* hides the default border */
@@ -116,20 +73,9 @@ button {
 }
 
 button:hover {
-    /* Make the button look different when the user hovers over it */
     background-color: #e63946;
 }
 
-/*** header ***
-  
-  Purpose:
-  - Add style rules for your website's header section
-
-  When To Modify:
-  - [X] Project 3 (REQUIRED FEATURE) 
-  - [ ] Project 4 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
 
 .header-container { /* Example A: This styles elements with class="header" */
     display: flex;
@@ -143,12 +89,7 @@ button:hover {
     text-align: center;
 }
 
-.header-item:nth-of-type(1){
 
-}
-.header-item:nth-of-type(2){
-  
-}
 .schedule-container {
     display: flex;
     flex-wrap: wrap;
@@ -187,31 +128,7 @@ button:hover {
     height: auto;
     margin-right: 20px;
 }
-/*** footer ***
-  
-  Purpose:
-  - Add style rules for your website's footer section
 
-  When To Modify:
-  - [ ] Project 3 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-.footer { /* Example B: This styles elements with class="footer" */
-    
-}
-
-/*** Navbar [PLACEHOLDER] [ADDED IN UNIT 4] ***/
-
-/*** Navigation bar (navbar) ***
-  
-  Purpose:
-  - Add style rules for your website's navbar
-
-  When To Modify:
-  - [ ] Project 4 (REQUIRED FEATURE) 
-  - [ ] Any time after
-***/
 
 .navbar ul {
     z-index: 1000; /* Ensures the navbar is on top of other elements */
@@ -266,43 +183,8 @@ button:hover {
 .navbar ul li button:hover {
   background-color: #d496df;
 }
-/*** About Section ***
-  
-  Purpose:
-  - Add style rules for your website's About section
-
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
 
 
-/*** Schedule Section ***
-  
-  Purpose:
-  - Add style rules for your website's Schedule section
-
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-
-/*** Links Section ***
-  
-  Purpose:
-  - Add style rules for your website's Links section
-
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-
-/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
 .rsvp-container {
  display: flex;
  flex-direction: row;
@@ -331,8 +213,8 @@ button:hover {
   border: 2px solid red;
   background-color: #ffd6d6;
 }
-/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
-/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+
+
 .modal {
   display: none;   /* modal should be hidden by default*/
   position: fixed; /* modal cannot move around the screen */
@@ -344,44 +226,33 @@ button:hover {
   width: 100%;
   height: 100%;
 
-  /* Add a semi-transparent background to shadow non-modal elements*/
   background-color: rgba(0,0,0,0.4); /* 40% opacity black */
 
-  /* Flexbox settings for modal */
-  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+
   flex-direction: column; 
   align-items: center;
   justify-content: center;
 }
 
 .modal-container {
-    /* Change modal size and spacing here */
     padding: 50px;
     width: 55%;
 
-    /* Customize modal style here */
     background-color: lightsteelblue;
     color: black;
     text-align: center;
     font-size: 1rem;
     font-family: monospace;
 
-    /* Optional: Use flexbox to customize .modal-item layout */
     display: flex;
 
 }
 
-.modal-item {
-    /* Optional: Style individual elements within the modal */
-}
 #modal-image {
   transition: transform 0.3s ease-in-out;
 }
 
 
-
-/*** Dark Mode [PLACEHOLDER] [ADDED IN UNIT 5] ***/
-/* Add style to button */
 #theme-button {
     padding: 10px;
     font-weight: bold;
@@ -396,12 +267,10 @@ button:hover {
 }
 
 button:hover {
-    /* Make the button look different when the user hovers over it */
     background-color: #e63946;
 }
 
 
-/* Default dark mode style */
 .dark-mode {
    --bg-color: #1e1e2f;           
   --text-color: #f0f0f5;
@@ -417,27 +286,6 @@ button:hover {
   color: var(--text-color);
 }
 
-/* Example: Different dark mode style for h1 */
-.dark-mode h1 {
-    
-}
-
-/* Example: Different dark mode style for visited links */
-.dark-mode a:visited * {
-
-}
-
-
-/*** Custom Colors (OPTIONAL) ***
-  
-  Purpose:
-  - Use CSS variables to define custom colors for your website
-  - To get you started, we've provided the color scheme used in our example site.
-  - To reference a color variable in your css, use var(--variable-name) in place of a color value
-
-  When To Modify:
-  - [ ] Any time (OPTIONAL)
-***/
 
 :root {
     /* Light Mode */
