@@ -1,37 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- head
-
-        Purpose:
-        - Title used here shows up in the browser tab
-        - Link to the favicon (small image that appears in the browser tab)
-        - Link to the CSS file (used to style the webpage)
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 2 (STRETCH FEATURE) (favicon)
-        - [ ] Any time after
-        -->
         <title>PCB Hacks</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     
     <body>
-    
-        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
-        <!-- navbar
-
-Purpose:
-- Navigation bar that allows users to jump to different sections of the webpage
-- Also holds buttons for user settings (dark mode, reduce motion)
-
-When To Modify:
-- [ ] Project 4 (REQUIRED FEATURE)
-- [ ] Project 5 (REQUIRED FEATURE) 
-- [ ] Project 8 (STRETCH FEATURE) 
-- [ ] Any time between / after
--->
 <div class="navbar">
     <ul>
     <li><a href="#about">About</a></li>
@@ -41,18 +15,6 @@ When To Modify:
     <li><button id="theme-button">Toggle Dark Mode</button></li>
     </ul>
 </div>
-        <!-- headings
-
-        Purpose:
-        - Main header section of the webpage
-        - Contains the title, subtitle, image, and key buttons for the webpage
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 3 (REQUIRED FEATURE) 
-        - [ ] Project 4 (REQUIRED FEATURE) 
-        - [ ] Any time after
-        -->
         <div class="header-container">
             <img id="header-img" src="./img/hackathon-flier.png"/>
             <div id="header-left">
@@ -68,18 +30,6 @@ When To Modify:
         </div>
 
         
-        <!-- about
-
-        Purpose:
-        - Section for general info about the event
-        - Contains a video, description, and key points about the event
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 2 (STRETCH FEATURE) 
-        - [ ] Project 4 (STRETCH FEATURE) 
-        - [ ] Any time between / after
-        --> 
         <h2 id="about">About the Event</h2>
         <p>Virtual event where college students who are hardware and software developers meet and collaborate to 
             create and display projects with significant environmental impact. </p>
@@ -92,31 +42,21 @@ When To Modify:
             <li> <b>Bullet 3:</b> <i>Opportunity to win 100 dollars in cash for best hacks</i></li>
         </ul>
         
-        <!-- schedule
-
-        Purpose:
-        - Section for specific info about the event's schedule
-        - Contains images and descriptions of each activity
-
-        When To Modify:
-        - [ ] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 4 (STRETCH FEATURE) 
-        - [ ] Any time between / after
-        --> 
+       
 <h2 id="schedule">Event Schedule</h2>
 <div class="schedule-container">
         <div class="schedule-item">
-            <img alt="hackathon" src="./img/hackathon.webp"/>
+            <img alt="hackathon" src="./img/hackathon.png"/>
             <h3>Hackathon Registration</h3>
             <p>All accepted applicants should register all of their team members by <span class="important">Aug. 27, 2025</span></p>
         </div>
         <div class="schedule-item">
-            <img alt="Start Building" src="./img/start_building.webp"/>
+            <img alt="Start Building" src="./img/start_building.png"/>
             <h3>Start Building</h3>
             <p>You and your team members should start working on implementing your project idea with the deadline of <span class="important">Sept. 20, 2025 </span> in mind</p> 
         </div>
         <div class="schedule-item">
-            <img alt="Submission" src="./img/submission.webp"/>
+            <img alt="Submission" src="./img/submission.png"/>
             <h3>Submissions and presentations</h3>
             <p>By the deadline, your team should have prepared a 5-minute video presentation on your hack which you would submit as
                 well as your documentation for judging. The results of the winners would be announced in <span id="announcements_date">October</span></p>
@@ -124,13 +64,12 @@ When To Modify:
 </div>
         
         
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
 <div id="rsvp">
     <h2>RSVP</h2>
     <div class="rsvp-container">
         <div class="rsvp-para">
             <p>Please RSVP for this event 🙏🏾!!!</p>
-            <!-- info goes here -->
+
         </div>
         <div class="rsvp-participants">
             <p id="rsvp-count">3 people have RSVP'd to this event!</p>
@@ -153,13 +92,12 @@ When To Modify:
              <label for="state">State</label>
              <input type="text" name="state" id="state">
         </form>
-        <!-- Submit button -->
+
         <button id="rsvp-button">Submit RSVP</button>
     </div>      
 </div>
 
 
-        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
         <div id="success-modal" class="modal">
             <div class="modal-container">
                 <div id="modal-item">
@@ -170,19 +108,10 @@ When To Modify:
                 </div>
             </div>
         </div>
-        <!-- links
 
-        Purpose:
-        - Links to other resources related to the event
-
-        When To Modify:
-        - [ ] Project 2 (STRETCH FEATURE) 
-        - [ ] Project 4 (STRETCH FEATURE) 
-        - [ ] Any time between / after
-        --> 
         <h2>Links</h2>
 
-        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+
         <a class="block" href="https://www.codepath.org" target="_blank">
             <article id="apply">
                 <h3>Application Link</h3>
@@ -190,8 +119,6 @@ When To Modify:
             </article>
         </a>
             
-        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
-        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
         <script src="index.js"></script>
     </body>
 </html>
