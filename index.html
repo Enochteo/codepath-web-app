@@ -91,3 +91,107 @@ When To Modify:
             <li> <b>Bullet 2:</b> <i>Building cool projects</i></li>
             <li> <b>Bullet 3:</b> <i>Opportunity to win 100 dollars in cash for best hacks</i></li>
         </ul>
+        
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+<h2 id="schedule">Event Schedule</h2>
+<div class="schedule-container">
+        <div class="schedule-item">
+            <img alt="hackathon" src="./img/hackathon.webp"/>
+            <h3>Hackathon Registration</h3>
+            <p>All accepted applicants should register all of their team members by <span class="important">Aug. 27, 2025</span></p>
+        </div>
+        <div class="schedule-item">
+            <img alt="Start Building" src="./img/start_building.webp"/>
+            <h3>Start Building</h3>
+            <p>You and your team members should start working on implementing your project idea with the deadline of <span class="important">Sept. 20, 2025 </span> in mind</p> 
+        </div>
+        <div class="schedule-item">
+            <img alt="Submission" src="./img/submission.webp"/>
+            <h3>Submissions and presentations</h3>
+            <p>By the deadline, your team should have prepared a 5-minute video presentation on your hack which you would submit as
+                well as your documentation for judging. The results of the winners would be announced in <span id="announcements_date">October</span></p>
+        </div>
+</div>
+        
+        
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>Please RSVP for this event 🙏🏾!!!</p>
+            <!-- info goes here -->
+        </div>
+        <div class="rsvp-participants">
+            <p id="rsvp-count">3 people have RSVP'd to this event!</p>
+            <p>🎟️ DJ from Texas has RSVP'd.</p>
+            <p>🎟️ Amy from New York has RSVP'd.</p>
+            <p>🎟️ Teresa from Montana has RSVP'd.</p>
+        </div>
+    </div>
+
+    <!--- Sign RSVP Form --->
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <!-- form inputs go here -->
+             <label for="name">Name</label>
+             <input type="text" name="name" id="name">
+
+             <label for="email">Email</label>
+             <input type="text" name="email" id="email">
+
+             <label for="state">State</label>
+             <input type="text" name="state" id="state">
+        </form>
+        <!-- Submit button -->
+        <button id="rsvp-button">Submit RSVP</button>
+    </div>      
+</div>
+
+
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id="modal-text">You have now joined the pack. Get ready soildier</p>
+                </div>
+                <div id="modal-item">
+                    <img id='modal-image' src="./img/success-modal-image.png" alt="success-modal-image">
+                </div>
+            </div>
+        </div>
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2>Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://www.codepath.org" target="_blank">
+            <article id="apply">
+                <h3>Application Link</h3>
+                <p style="color: red;">Applications close on the 29th and are on a rolling basis!!!</p>
+            </article>
+        </a>
+            
+        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
+        <script src="index.js"></script>
+    </body>
+</html>
