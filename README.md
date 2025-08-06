@@ -1,5 +1,6 @@
 ## Codepath WEB 101 Final Project
-This is my final project for Codepath's web 101 - Intro to Web Development Course
+This is my final project for Codepath's web 101 - Intro to Web Development Course.
+A web app to publicize an hackathon.
 
 ## Stack
 - HTML
